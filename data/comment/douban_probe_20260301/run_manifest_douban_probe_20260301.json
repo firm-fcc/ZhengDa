@@ -1,0 +1,117 @@
+{
+  "run_time": "2026-03-01 12:23:36",
+  "crawl_batch_id": "comment_v2_20260301_121651",
+  "parser_version": "comment_v2.0.1",
+  "args": {
+    "input": "d:\\fcc\\ZhengDa\\data\\basic information\\basic information.xlsx",
+    "out_dir": "d:\\fcc\\ZhengDa\\data\\comment",
+    "years": [
+      2024,
+      2025
+    ],
+    "max_videos": 3,
+    "max_comments_per_video": 200,
+    "retry": 3,
+    "sleep": 0.35,
+    "timeout": 20,
+    "dictionary": "d:\\fcc\\ZhengDa\\scripts\\comment\\kano_sem_dimension_dict.json",
+    "platforms": [
+      "douban"
+    ],
+    "xhs_min_records": 50,
+    "experience_filter": true,
+    "calibration_size": 20,
+    "out_version": "douban_probe_20260301",
+    "old_comment_dir": "d:\\fcc\\ZhengDa\\data\\comment"
+  },
+  "input_file": "d:\\fcc\\ZhengDa\\data\\basic information\\basic information.xlsx",
+  "out_dir": "d:\\fcc\\ZhengDa\\data\\comment\\douban_probe_20260301",
+  "baseline": {
+    "exists": true,
+    "files": {
+      "concert_comments_raw_bilibili_2024_2025.xlsx": {
+        "size": 582944,
+        "md5": "6ac42ac96b569a1115fc53949882298f"
+      },
+      "concert_comments_labeled_kano_sem_2024_2025.xlsx": {
+        "size": 640128,
+        "md5": "cc95dd3fbcf5dcd6dbee40833f03f15f"
+      },
+      "concert_sem_ready_metrics_2024_2025.xlsx": {
+        "size": 28649,
+        "md5": "16bb68535834ce6f95a739d3f12b442f"
+      },
+      "concert_video_match_audit_2024_2025.xlsx": {
+        "size": 253751,
+        "md5": "a7a66565162f8f5aed26b931766af8cb"
+      }
+    },
+    "metrics": {
+      "old_labeled_rows": 3253,
+      "old_any_dim_ratio": 0.015063018751921304,
+      "old_sem_rows": 85,
+      "old_sem_nonzero_shows": 61
+    }
+  },
+  "old_files_after": {
+    "concert_comments_raw_bilibili_2024_2025.xlsx": {
+      "md5": "6ac42ac96b569a1115fc53949882298f",
+      "size": 582944
+    },
+    "concert_comments_labeled_kano_sem_2024_2025.xlsx": {
+      "md5": "cc95dd3fbcf5dcd6dbee40833f03f15f",
+      "size": 640128
+    },
+    "concert_sem_ready_metrics_2024_2025.xlsx": {
+      "md5": "16bb68535834ce6f95a739d3f12b442f",
+      "size": 28649
+    },
+    "concert_video_match_audit_2024_2025.xlsx": {
+      "md5": "a7a66565162f8f5aed26b931766af8cb",
+      "size": 253751
+    }
+  },
+  "platform_stats": {
+    "douban": {
+      "records": 37,
+      "estimated_experience_records": 25,
+      "queries": 306,
+      "source_breakdown": {
+        "douban_direct": 0,
+        "search_engine_fallback": 37
+      }
+    }
+  },
+  "new_metrics": {
+    "raw_rows": 37,
+    "labeled_rows": 37,
+    "sem_rows": 85,
+    "audit_rows": 306,
+    "platform_unique": 1,
+    "new_platform_records": 37,
+    "any_dim_ratio_old": 0.015063018751921304,
+    "any_dim_ratio_new": 0.7297297297297297,
+    "any_dim_multiplier": 48.44511858797573,
+    "sem_nonzero_shows": 1
+  },
+  "checks": {
+    "old_md5_unchanged": true,
+    "platform_count_ge_2": false,
+    "new_platform_records_ge_200": false,
+    "any_dim_ratio_ge_5pct": true,
+    "any_dim_ratio_ge_3x_old": true,
+    "raw_unique_platform_record_id": true,
+    "sem_unique_show_id": true,
+    "sem_rows_eq_85": true,
+    "audit_show_coverage_eq_85": false,
+    "calibration_rows_eq_200": true
+  },
+  "outputs": {
+    "raw": "d:\\fcc\\ZhengDa\\data\\comment\\douban_probe_20260301\\concert_comments_raw_multiplatform_douban_probe_20260301.xlsx",
+    "labeled": "d:\\fcc\\ZhengDa\\data\\comment\\douban_probe_20260301\\concert_comments_labeled_multiplatform_douban_probe_20260301.xlsx",
+    "sem_ready": "d:\\fcc\\ZhengDa\\data\\comment\\douban_probe_20260301\\concert_sem_ready_metrics_multiplatform_douban_probe_20260301.xlsx",
+    "audit": "d:\\fcc\\ZhengDa\\data\\comment\\douban_probe_20260301\\concert_platform_fetch_audit_douban_probe_20260301.xlsx",
+    "calibration_sample": "d:\\fcc\\ZhengDa\\data\\comment\\douban_probe_20260301\\calibration_sample_200_douban_probe_20260301.xlsx",
+    "calibration_report": "d:\\fcc\\ZhengDa\\data\\comment\\douban_probe_20260301\\calibration_report_douban_probe_20260301.xlsx"
+  }
+}
